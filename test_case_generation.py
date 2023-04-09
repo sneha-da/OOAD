@@ -59,7 +59,7 @@ user_input = st.text_input("Type your message here and hit Enter:")
 if user_input:
     chatbot_response = gpt3_chatbot(f"{user_input} (Create test cases for each use case given, also write the REGEX without fail for the same if the test needs a REGEX)")
     st.write(chatbot_response)
-st.subheader("Choose the use case")
+st.subheader("Choose the use case for validation")
 genre = st.radio( "",('E-mail ID', 'Phone no'))
 if genre == 'E-mail ID':
     text_ebox =  st.text_input("Type the Email-ID and hit enter to validate")
